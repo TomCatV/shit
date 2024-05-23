@@ -1,0 +1,86 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  .screen_box {
+    background: #fff;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 96px;
+    margin-bottom: 20px;
+    box-shadow:
+      0px 4px 10px 0px rgba(78, 89, 105, 0.06),
+      0px 1px 0px 0px #e5e6eb;
+    .screen_item_box {
+      display: flex;
+    }
+    .screen_item_one {
+      display: flex;
+      align-items: center;
+    }
+    .screen_item {
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .screen_button_box {
+      margin-left: 20px;
+    }
+    :deep(.el-input) {
+      width: 180px;
+      height: 32px;
+    }
+    :deep(.el-button) {
+      width: 84px;
+      height: 32px;
+    }
+    :deep(.el-select) {
+      width: 180px;
+      div {
+        font-size: 12px;
+      }
+    }
+  }
+  .table_box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px 60px;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow:
+      0px 4px 10px 0px rgba(78, 89, 105, 0.06),
+      0px 1px 0px 0px #e5e6eb;
+  }
+
+  :deep(.el-table) {
+    margin: 20px 0 100px;
+  }
+  :deep(.el-pagination) {
+    display: flex;
+    justify-content: end;
+    .el-pager li.is-active {
+      background: #e8f4ff;
+      color: #1664ff;
+    }
+  }
+  .hint_dialog_content {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  :deep(.el-descriptions__body) {
+    padding-left: 20px;
+  }
+  .dialog-footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+.quadrate {
+  width: 14px;
+  height: 14px;
+  margin-top: -2px;
+  transform: rotate(45deg);
+  background: linear-gradient(180deg, #409eff 3%, #a5d1ff 100%);
+}
